@@ -1,0 +1,10 @@
+spec:
+  {{#envvars}}
+  env:
+    {{#envvars_list}}
+      {{envvar_name}}: {{envvar_value}}
+    {{/envvars_list}}
+  {{/envvars}}
+  resources:
+    requests:
+      cpu: 1
